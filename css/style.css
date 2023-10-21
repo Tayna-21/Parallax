@@ -1,0 +1,119 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.parallax_body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.parallax{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+.winter{
+  background-image: url("../img/winter.webp");
+  background-size: cover;
+  transform-style: inherit;
+  transform: translateZ(-1px) scale(2);
+}
+.balloons{
+  background-image: url("../img/balloons.webp");
+  background-size: cover;
+  box-shadow: 0px 5px 35px 25px #93b2bd;
+  transform-style: inherit;
+  position: relative;
+  z-index: 1;
+}
+.summer{
+  background-image: url("../img/summer.webp");
+  background-size: cover;
+  transform-style: inherit;
+  transform: translateZ(-1px) scale(2);
+}
+.autumn{
+  background-image: url("../img/autumn.webp");
+  background-size: cover;
+  box-shadow: 0px 5px 35px 25px #93b2bd;
+  transform-style: inherit;
+}
+h1{
+  font-family: "Kolker Brush", cursive;
+  font-size: calc(24px + 70 * (100vw / 1280));
+  padding: 15px;
+  color: #7ab7d9;
+  text-shadow: 1px 1px #023552;
+  transform: translateZ(0.25px) scale(1.5);
+}
+.title_winter{
+  transform: translateZ(0.5px) scale(2);
+}
+.title_through{
+  margin-bottom: 70px;
+}
+.title_summer{
+  transform: translateZ(0.5px) scale(2);
+}
+.title_to_autumn{
+  position: relative;
+  margin-bottom: 70px;
+}
+.title_to_autumn::after {
+  content: " ";
+  position: absolute;
+  top: 80%;
+  left: 4%;
+  width: 92%;
+  height: 2%;
+  border-radius: 10px;
+  background-color: #7ab7d9;
+  box-shadow: 1px 1px #023552;
+}
+.parallax_balloon_1{
+  background-image: url("../img/parallax1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top:77%;
+  right: -35%;
+  width: 100%;
+  height: 100%;
+  background-size: 50%;
+  margin: 0 5px;
+  transform: translateZ(0.2px) scale(0.3);
+  z-index: 2;
+}
+.parallax_balloon_2{
+  background-image: url("../img/parallax2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 105%;
+  left: 1%;
+  width: 100%;
+  height: 100%;
+  background-size: 15%;
+  margin: 0 5px;
+  transform: translateZ(0.2px) scale(0.7);
+  z-index: 2;
+}
+.parallax_balloon_3{
+  background-image: url("../img/parallax3.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 80%;
+  left: -3%;
+  width: 100%;
+  height: 100%;
+  background-size: 15%;
+  margin: 0 5px;
+  transform: translateZ(0.2px) scale(0.3);
+  z-index: 2;
+}
